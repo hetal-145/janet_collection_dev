@@ -2,6 +2,11 @@
     "require": {
         "stripe/stripe-php": "^7.0",
         "phpoffice/phpspreadsheet": "1.8.2",
+<<<<<<< HEAD
         "stuartapp/stuart-client-php": "^3.5"
+=======
+        "stuartapp/stuart-client-php": "^3.5",
+        "chriskacerguis/codeigniter-restserver": "^3.1"
+>>>>>>> 9a238959395f09e82f58e0e54ade6c966079d003
     }
 }

@@ -2,9 +2,15 @@
 class Xcrud_config
 {
     // default connection
+<<<<<<< HEAD
     public static $dbname = 'predrinkdelivery'; // Your database name
     public static $dbuser = 'root'; // Your database username
     public static $dbpass = 'prismetric1'; // // Your database password
+=======
+    public static $dbname = 'janet_collection'; // Your database name
+    public static $dbuser = 'root'; // Your database username
+    public static $dbpass = '<fJ)-Tudfdzv-Z~+aLJe)6GM-<S-zXBq'; // // Your database password
+>>>>>>> 9a238959395f09e82f58e0e54ade6c966079d003
     public static $dbhost = 'localhost'; // Your database host, 'localhost' is default.
     
        

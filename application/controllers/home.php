@@ -29,14 +29,22 @@ class Home extends CI_Controller {
 		$response1 = $this->m_tools->use_api3('best_selling_products');
 	    }
 
+<<<<<<< HEAD
         if($response["status"] == "false") {
+=======
+        if(isset($response["status"]) && $response["status"] == "false") {
+>>>>>>> 9a238959395f09e82f58e0e54ade6c966079d003
             $data["top_picks"] = array();    
         }
         else {
             $data["top_picks"] = $response["top_pick_product"];
         }
 
+<<<<<<< HEAD
         if($response1["status"] == "false") {
+=======
+        if(isset($response1["status"]) && $response1["status"] == "false") {
+>>>>>>> 9a238959395f09e82f58e0e54ade6c966079d003
             $data["best_selling_product"] = array();    
         }
         else {

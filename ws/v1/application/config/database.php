@@ -50,8 +50,13 @@ $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
 $db['default']['username'] = 'root';
+<<<<<<< HEAD
 $db['default']['password'] = 'prismetric1';
 $db['default']['database'] = 'predrinkdelivery';
+=======
+$db['default']['password'] = '<fJ)-Tudfdzv-Z~+aLJe)6GM-<S-zXBq';
+$db['default']['database'] = 'janet_collection';
+>>>>>>> 9a238959395f09e82f58e0e54ade6c966079d003
 $db['default']['dbdriver'] = 'mysqli';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
