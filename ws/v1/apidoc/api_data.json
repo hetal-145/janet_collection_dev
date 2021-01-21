@@ -1,0 +1,3260 @@
+[
+  {
+    "group": "Change_Password",
+    "type": "post",
+    "url": "change/password",
+    "title": "User/Wrecker/Mechanic Change Password",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "password",
+            "description": ""
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "Change_Password",
+    "name": "PostChangePassword"
+  },
+  {
+    "group": "Forgot_Password",
+    "type": "post",
+    "url": "auth/forgot/password",
+    "title": "Forgot Password",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "email",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "user_type",
+            "description": "<p>customer|wrecker|mechanic</p>"
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "Forgot_Password",
+    "name": "PostAuthForgotPassword"
+  },
+  {
+    "group": "General",
+    "type": "post",
+    "url": "https://getnfix.com/api/",
+    "title": "Prefix Url",
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "General",
+    "name": "PostHttpsGetnfixComApi"
+  },
+  {
+    "group": "Notifications",
+    "type": "get",
+    "url": "notification_count",
+    "title": "Notification Count",
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "Notifications",
+    "name": "GetNotification_count"
+  },
+  {
+    "group": "Notifications",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>bearer token</p>"
+          }
+        ]
+      }
+    },
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": false,
+            "field": "messages_is_sms",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": false,
+            "field": "messages_is_email",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": false,
+            "field": "messages_is_push",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": false,
+            "field": "request_updates_is_sms",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": false,
+            "field": "request_updates_is_email",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": false,
+            "field": "request_updates_is_push",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": false,
+            "field": "transactions_is_sms",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": false,
+            "field": "transactions_is_email",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": false,
+            "field": "transactions_is_push",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": false,
+            "field": "helpful_information_is_sms",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": false,
+            "field": "helpful_information_is_email",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": false,
+            "field": "helpful_information_is_push",
+            "description": ""
+          }
+        ]
+      }
+    },
+    "type": "post",
+    "url": "notification_settings",
+    "title": "Notification Setting",
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "Notifications",
+    "name": "PostNotification_settings"
+  },
+  {
+    "group": "Notify_Me",
+    "type": "post",
+    "url": "notify_me",
+    "title": "Notify Me",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Double",
+            "optional": true,
+            "field": "max_price",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "Double",
+            "optional": true,
+            "field": "min_price",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": true,
+            "field": "min_distance",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": true,
+            "field": "max_distance",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "search_keyword",
+            "description": ""
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "Notify_Me",
+    "name": "PostNotify_me"
+  },
+  {
+    "group": "Notify_Me",
+    "type": "post",
+    "url": "notify_me/delete",
+    "title": "Delete Notify Me",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": false,
+            "field": "id",
+            "description": ""
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "Notify_Me",
+    "name": "PostNotify_meDelete"
+  },
+  {
+    "group": "Part_Request",
+    "type": "post",
+    "url": "part_request/like",
+    "title": "like/unlike for part request",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": false,
+            "field": "part_request_id",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": false,
+            "field": "is_like",
+            "description": "<p>0/1</p>"
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "Part_Request",
+    "name": "PostPart_requestLike"
+  },
+  {
+    "group": "Part_Request",
+    "type": "post",
+    "url": "part_request/rate_review",
+    "title": "rate and review for part request",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": false,
+            "field": "part_request_id",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "review",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": false,
+            "field": "rate",
+            "description": ""
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "Part_Request",
+    "name": "PostPart_requestRate_review"
+  },
+  {
+    "group": "Shipping",
+    "type": "post",
+    "url": "shipping/charges",
+    "title": "shipping charges",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>bearer token</p>"
+          }
+        ]
+      }
+    },
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": false,
+            "field": "from_post_code",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": false,
+            "field": "to_post_code",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": false,
+            "field": "length_in_cm",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": false,
+            "field": "width_in_cm",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": false,
+            "field": "height_in_cm",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": false,
+            "field": "weight_in_kg",
+            "description": ""
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "Shipping",
+    "name": "PostShippingCharges"
+  },
+  {
+    "group": "Socket",
+    "type": "TCP",
+    "url": "https://www.getnfix.com:1333?user_id=1&user_type=customer",
+    "title": "",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Emit",
+            "optional": false,
+            "field": "message",
+            "description": "<p><em>User/Wrecker App</em><br>Send message<br><code>{ &quot;message&quot;: &quot;hi&quot;, &quot;msg_type&quot; : &quot;text&quot;, &quot;chat_id&quot; : &quot;jasgdj&quot; }</code><br>==&gt; chat_id need to be get from part_request/fix_car_request/wreck_car_request<br>Use Ack for response</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Listen",
+            "optional": false,
+            "field": "_message",
+            "description": "<p><em>User/Wrecker App</em><br>Listen for new message<br><code>JSON Data</code></p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Emit",
+            "optional": false,
+            "field": "get_messages",
+            "description": "<p><em>User/Wrecker App</em><br>Get all messages for particular request<br><code>{ &quot;chat_id&quot; : &quot;jasgdj&quot; }</code><br>==&gt; chat_id need to be get from part_request/fix_car_request/wreck_car_request<br>Use Ack for response</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Emit",
+            "optional": false,
+            "field": "get_conversations",
+            "description": "<p><em>User/Wrecker App</em><br>Get Conversations<br>Use Ack for response</p>"
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "Socket",
+    "name": "TcpHttpsWwwGetnfixCom1333User_id1User_typeCustomer"
+  },
+  {
+    "group": "Stripe",
+    "type": "get",
+    "url": "stripe/credentilas",
+    "title": "get stripe credentials",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>bearer token</p>"
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "Stripe",
+    "name": "GetStripeCredentilas"
+  },
+  {
+    "group": "Stripe",
+    "type": "get",
+    "url": "stripe/get_cards",
+    "title": "Get Stripe Cards",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>bearer token</p>"
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "Stripe",
+    "name": "GetStripeGet_cards"
+  },
+  {
+    "group": "Stripe",
+    "type": "post",
+    "url": "stripe/account/create",
+    "title": "create stripe  account",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>bearer token</p>"
+          }
+        ]
+      }
+    },
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "account_holder_name",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "routing_number",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "account_number",
+            "description": ""
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "Stripe",
+    "name": "PostStripeAccountCreate"
+  },
+  {
+    "group": "Stripe",
+    "type": "post",
+    "url": "stripe/card/create",
+    "title": "create stripe card",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>bearer token</p>"
+          }
+        ]
+      }
+    },
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "stripe_token",
+            "description": ""
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "Stripe",
+    "name": "PostStripeCardCreate"
+  },
+  {
+    "group": "Stripe",
+    "type": "post",
+    "url": "stripe/card/delete",
+    "title": "Delete Stripe Cards",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "card_id",
+            "description": ""
+          }
+        ]
+      }
+    },
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>bearer token</p>"
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "Stripe",
+    "name": "PostStripeCardDelete"
+  },
+  {
+    "group": "Stripe",
+    "type": "post",
+    "url": "stripe/payment/withdraw",
+    "title": "stripe payment withraw",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>bearer token</p>"
+          }
+        ]
+      }
+    },
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Double",
+            "optional": false,
+            "field": "amount",
+            "description": ""
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "Stripe",
+    "name": "PostStripePaymentWithdraw"
+  },
+  // {
+  //   "group": "User",
+  //   "type": "get",
+  //   "url": "delete_account",
+  //   "title": "Delete Account",
+  //   "header": {
+  //     "fields": {
+  //       "Header": [
+  //         {
+  //           "group": "Header",
+  //           "type": "String",
+  //           "optional": false,
+  //           "field": "Authorization",
+  //           "description": "<p>Bearer token</p>"
+  //         }
+  //       ]
+  //     }
+  //   },
+  //   "version": "1.0.0",
+  //   "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+  //   "groupTitle": "User",
+  //   "name": "GetDelete_account"
+  // },
+  {
+    "group": "User",
+    "type": "get",
+    "url": "get_profile",
+    "title": "Get Profile",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>Bearer token</p>"
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "User",
+    "name": "GetGet_profile"
+  },
+  {
+    "group": "User",
+    "type": "get",
+    "url": "get_unread_notification_count",
+    "title": "Get Unread Notification Count",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>bearer token</p>"
+          }
+        ]
+      }
+    },
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": false,
+            "field": "offset",
+            "description": ""
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "User",
+    "name": "GetGet_unread_notification_count"
+  },
+  {
+    "group": "User",
+    "type": "get",
+    "url": "logout",
+    "title": "Logout",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>Bearer token</p>"
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "User",
+    "name": "GetLogout"
+  },
+  {
+    "group": "User",
+    "type": "get",
+    "url": "notification_list",
+    "title": "Get Notifications",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>bearer token</p>"
+          }
+        ]
+      }
+    },
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": false,
+            "field": "offset",
+            "description": ""
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "User",
+    "name": "GetNotification_list"
+  },
+  {
+    "group": "User",
+    "type": "get",
+    "url": "other_user_profile/{id}",
+    "title": "Get Other User Profile",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>Bearer token</p>"
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "User",
+    "name": "GetOther_user_profileId"
+  },
+  
+  {
+    "group": "User",
+    "type": "get",
+    "url": "parts",
+    "title": "Get Parts List",
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "User",
+    "name": "GetParts"
+  },
+  {
+    "group": "User",
+    "type": "post",
+    "url": "auth/send_otp",
+    "title": "Send OTP",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "name",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "phone",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "country_code",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "user_type",
+            "description": "<p>customer</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "device_id",
+            "description": ""
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "User",
+    "name": "PostAuthSend_otp"
+  },
+  {
+    "group": "User",
+    "type": "post",
+    "url": "register",
+    "title": "Register",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>Bearer token</p>"
+          }
+        ]
+      }
+    },
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "email",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "password",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "suburb",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "entity_name",
+            "description": ""
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "User",
+    "name": "PostRegister"
+  },
+  {
+    "group": "User",
+    "type": "post",
+    "url": "resend/email/verification",
+    "title": "Resend Email Verification",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>Bearer token</p>"
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "User",
+    "name": "PostResendEmailVerification"
+  },
+  {
+    "group": "User",
+    "type": "post",
+    "url": "update/shipping_method",
+    "title": "update shipping method",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>bearer token</p>"
+          }
+        ]
+      }
+    },
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "delivery_type",
+            "description": "<p>self_delivery/pick_up/third-party</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": false,
+            "field": "part_request_bid_id",
+            "description": ""
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "User",
+    "name": "PostUpdateShipping_method"
+  },
+  {
+    "group": "User",
+    "type": "post",
+    "url": "update_profile",
+    "title": "Update Profile",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>Bearer token</p>"
+          }
+        ]
+      }
+    },
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "email",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "phone",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "name",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "suburb",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "profile_address",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "profile_address_latitude",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "profile_address_longitude",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "profile_pic",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "about_me",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "Date",
+            "optional": true,
+            "field": "birth_date",
+            "description": "<p>Birth date yyyy-mm-dd format</p>"
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "User",
+    "name": "PostUpdate_profile"
+  },
+  {
+    "group": "User",
+    "type": "post",
+    "url": "update_token",
+    "title": "Update device token",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>bearer token</p>"
+          }
+        ]
+      }
+    },
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": false,
+            "field": "device_type",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "device_token",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "device_id",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "device_name",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "app_version",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "platform",
+            "description": ""
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "User",
+    "name": "PostUpdate_token"
+  },
+  {
+    "group": "Web_View",
+    "type": "get",
+    "url": "http://3.104.18.33/account_faq",
+    "title": "",
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "Web_View",
+    "name": "GetHttp31041833Account_faq"
+  },
+  {
+    "group": "Web_View",
+    "type": "get",
+    "url": "http://3.104.18.33/posting_and_tracking_faq",
+    "title": "",
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "Web_View",
+    "name": "GetHttp31041833Posting_and_tracking_faq"
+  },
+  {
+    "group": "Web_View",
+    "type": "get",
+    "url": "http://3.104.18.33/privacy_policy",
+    "title": "",
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "Web_View",
+    "name": "GetHttp31041833Privacy_policy"
+  },
+  {
+    "group": "Web_View",
+    "type": "get",
+    "url": "http://3.104.18.33/return_and_refund_faq",
+    "title": "",
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "Web_View",
+    "name": "GetHttp31041833Return_and_refund_faq"
+  },
+  {
+    "group": "Web_View",
+    "type": "get",
+    "url": "http://3.104.18.33/selling_and_buying_faq",
+    "title": "",
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "Web_View",
+    "name": "GetHttp31041833Selling_and_buying_faq"
+  },
+  {
+    "group": "Web_View",
+    "type": "get",
+    "url": "http://3.104.18.33/support_center",
+    "title": "",
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "Web_View",
+    "name": "GetHttp31041833Support_center"
+  },
+  {
+    "group": "Web_View",
+    "type": "get",
+    "url": "http://3.104.18.33/terms_and_conditions",
+    "title": "",
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "Web_View",
+    "name": "GetHttp31041833Terms_and_conditions"
+  },
+  {
+    "group": "Wrecker",
+    "type": "get",
+    "url": "delete_account",
+    "title": "Delete Account",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>Bearer token</p>"
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "Wrecker",
+    "name": "GetDelete_account"
+  },
+  {
+    "group": "Wrecker",
+    "type": "get",
+    "url": "fix_car_request/{id}",
+    "title": "Get Fix Car Request By Id",
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "Wrecker",
+    "name": "GetFix_car_requestId"
+  },
+  {
+    "group": "Wrecker",
+    "type": "get",
+    "url": "fix_car_request/index",
+    "title": "Get fix car request list",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>Bearer token</p>"
+          }
+        ]
+      }
+    },
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": false,
+            "field": "offset",
+            "description": ""
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "Wrecker",
+    "name": "GetFix_car_requestIndex"
+  },
+  {
+    "group": "Wrecker",
+    "type": "get",
+    "url": "get_profile",
+    "title": "Get Profile",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>Bearer token</p>"
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "Wrecker",
+    "name": "GetGet_profile"
+  },
+  {
+    "group": "Wrecker",
+    "type": "get",
+    "url": "get_unread_notification_count",
+    "title": "Get Unread Notification Count",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>bearer token</p>"
+          }
+        ]
+      }
+    },
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": false,
+            "field": "offset",
+            "description": ""
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "Wrecker",
+    "name": "GetGet_unread_notification_count"
+  },
+  {
+    "group": "Wrecker",
+    "type": "get",
+    "url": "logout",
+    "title": "Logout",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>Bearer token</p>"
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "Wrecker",
+    "name": "GetLogout"
+  },
+  {
+    "group": "Wrecker",
+    "type": "get",
+    "url": "notification_list",
+    "title": "Get Notifications",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>bearer token</p>"
+          }
+        ]
+      }
+    },
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": false,
+            "field": "offset",
+            "description": ""
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "Wrecker",
+    "name": "GetNotification_list"
+  },
+  {
+    "group": "Wrecker",
+    "type": "get",
+    "url": "other_user_profile/{id}",
+    "title": "Get Other User Profile",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>Bearer token</p>"
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "Wrecker",
+    "name": "GetOther_user_profileId"
+  },
+  {
+    "group": "Wrecker",
+    "type": "get",
+    "url": "part_request/offer/{id}",
+    "title": "Get Part Request Offer by part Id",
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "Wrecker",
+    "name": "GetPart_requestOfferId"
+  },
+  {
+    "group": "Wrecker",
+    "type": "get",
+    "url": "part_request/question/{id}",
+    "title": "Get Question By Question ID",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>bearer token</p>"
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "Wrecker",
+    "name": "GetPart_requestQuestionId"
+  },
+  {
+    "group": "Wrecker",
+    "type": "get",
+    "url": "wrecker/fix_car_request",
+    "title": "Wrecker Get Fix Car Request List",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": false,
+            "field": "offset",
+            "description": ""
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "Wrecker",
+    "name": "GetWreckerFix_car_request"
+  },
+  {
+    "group": "Wrecker",
+    "type": "get",
+    "url": "wrecker/part_request/{id}",
+    "title": "Wrecker Get Part Request By Id",
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "Wrecker",
+    "name": "GetWreckerPart_requestId"
+  },
+  {
+    "group": "Wrecker",
+    "type": "get",
+    "url": "/wrecker/wreck_car_request/index",
+    "title": "Get wreck car request list",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>Bearer token</p>"
+          }
+        ]
+      }
+    },
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": false,
+            "field": "offset",
+            "description": ""
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "Wrecker",
+    "name": "GetWreckerWreck_car_requestIndex"
+  },
+  {
+    "group": "Wrecker",
+    "type": "post",
+    "url": "auth/login",
+    "title": "Login",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "email",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "password",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "user_type",
+            "description": "<p>wrecker or mechanic</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "device_token",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "device_id",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "device_name",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "device_type",
+            "description": ""
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "Wrecker",
+    "name": "PostAuthLogin"
+  },
+  {
+    "group": "Wrecker",
+    "type": "post",
+    "url": "auth/send_otp",
+    "title": "Send OTP",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "name",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "phone",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "country_code",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "user_type",
+            "description": "<p>wrecker|mechanic</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "device_id",
+            "description": ""
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "Wrecker",
+    "name": "PostAuthSend_otp"
+  },
+  {
+    "group": "Wrecker",
+    "type": "post",
+    "url": "auth/verify",
+    "title": "OTP verify",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "phone",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "otp",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "user_type",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "device_token",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "device_id",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "device_name",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "device_type",
+            "description": ""
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "Wrecker",
+    "name": "PostAuthVerify"
+  },
+  {
+    "group": "Wrecker",
+    "type": "post",
+    "url": "cancel_request/accept_decline_offer",
+    "title": "a part request",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": false,
+            "field": "part_request_id",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "status",
+            "description": "<p>accepted/rejected</p>"
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "Wrecker",
+    "name": "PostCancel_requestAccept_decline_offer"
+  },
+  {
+    "group": "Wrecker",
+    "type": "post",
+    "url": "contact_us",
+    "title": "Contact Us",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>Bearer token</p>"
+          }
+        ]
+      }
+    },
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "name",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "email",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "phone",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "message",
+            "description": ""
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "Wrecker",
+    "name": "PostContact_us"
+  },
+  {
+    "group": "Wrecker",
+    "type": "post",
+    "url": "fix_car_request/offer_bid",
+    "title": "Make offer for Fix Car Request",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>Bearer token</p>"
+          }
+        ]
+      }
+    },
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": false,
+            "field": "fix_car_request_id",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "Double",
+            "optional": false,
+            "field": "bid_price",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "description",
+            "description": ""
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "Wrecker",
+    "name": "PostFix_car_requestOffer_bid"
+  },
+  {
+    "group": "Wrecker",
+    "type": "post",
+    "url": "fix_car_request/offer_list",
+    "title": "List of offers made for fix car request",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": false,
+            "field": "fix_car_request_id",
+            "description": ""
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "Wrecker",
+    "name": "PostFix_car_requestOffer_list"
+  },
+  {
+    "group": "Wrecker",
+    "type": "post",
+    "url": "fix_car_request/setup_alert",
+    "title": "Setup alert for fix car request",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>Bearer token</p>"
+          }
+        ]
+      }
+    },
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": false,
+            "field": "fix_car_request_id",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": false,
+            "field": "notification",
+            "description": "<p>0/1</p>"
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "Wrecker",
+    "name": "PostFix_car_requestSetup_alert"
+  },
+  {
+    "group": "Wrecker",
+    "type": "post",
+    "url": "offer/image/delete",
+    "title": "Offer single image delete",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": false,
+            "field": "image_id",
+            "description": ""
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "Wrecker",
+    "name": "PostOfferImageDelete"
+  },
+  {
+    "group": "Wrecker",
+    "type": "post",
+    "url": "part_request/ask_for_payment",
+    "title": "Ask For Payment",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>bearer token</p>"
+          }
+        ]
+      }
+    },
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": false,
+            "field": "part_request_id",
+            "description": ""
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "Wrecker",
+    "name": "PostPart_requestAsk_for_payment"
+  },
+  {
+    "group": "Wrecker",
+    "type": "post",
+    "url": "part_request/ask_question",
+    "title": "Ask Question For Part Request",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>bearer token</p>"
+          }
+        ]
+      }
+    },
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": false,
+            "field": "part_request_id",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "question",
+            "description": ""
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "Wrecker",
+    "name": "PostPart_requestAsk_question"
+  },
+  {
+    "group": "Wrecker",
+    "type": "post",
+    "url": "part_request/cancel",
+    "title": "Cancel a part request",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": false,
+            "field": "part_request_bid_id",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "canceled_reason",
+            "description": ""
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "Wrecker",
+    "name": "PostPart_requestCancel"
+  },
+  {
+    "group": "Wrecker",
+    "type": "post",
+    "url": "part_request/increase_price",
+    "title": "Increase price for part request",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>bearer token</p>"
+          }
+        ]
+      }
+    },
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": false,
+            "field": "part_request_bid_id",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "Double",
+            "optional": false,
+            "field": "increased_price",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "increase_price_reason",
+            "description": ""
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "Wrecker",
+    "name": "PostPart_requestIncrease_price"
+  },
+  {
+    "group": "Wrecker",
+    "type": "post",
+    "url": "part_request/mark_as_delivered",
+    "title": "Mark part as delivered",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>bearer token</p>"
+          }
+        ]
+      }
+    },
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": false,
+            "field": "part_request_bid_id",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "tracking_number",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "courier_service_name",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "Date",
+            "optional": false,
+            "field": "courier_estimate_delivery_date",
+            "description": "<p>pass date in yyyy-mm-dd format</p>"
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "Wrecker",
+    "name": "PostPart_requestMark_as_delivered"
+  },
+  {
+    "group": "Wrecker",
+    "type": "post",
+    "url": "part_request/mark_unavailable",
+    "title": "Mark part as unavailable",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": false,
+            "field": "part_request_id",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "description",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "File[]",
+            "optional": true,
+            "field": "image",
+            "description": "<p>pass image array{File}</p>"
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "Wrecker",
+    "name": "PostPart_requestMark_unavailable"
+  },
+  {
+    "group": "Wrecker",
+    "type": "post",
+    "url": "part_request/offer_bid",
+    "title": "Make offer for part request",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": true,
+            "field": "id",
+            "description": "<p>This param needs to be pass when it is update offer request</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": false,
+            "field": "part_request_id",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "part_description",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "File[]",
+            "optional": true,
+            "field": "image",
+            "description": "<p>pass image array{File}</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "delivery_type",
+            "description": "<p>self_delivery/pick_up/third-party</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Boolean",
+            "optional": true,
+            "field": "is_pull_pick_up",
+            "description": "<p>0/1</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Double",
+            "optional": true,
+            "field": "delivery_charge",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": true,
+            "field": "estimated_days",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "return_policy",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "return_postage_by",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": true,
+            "field": "height_in_cm",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": true,
+            "field": "width_in_cm",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": true,
+            "field": "depth_in_cm",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "Boolean",
+            "optional": true,
+            "field": "is_irregular_package",
+            "description": "<p>0/1</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": true,
+            "field": "weight_kg",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": true,
+            "field": "weight_gm",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": true,
+            "field": "bid_price",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": true,
+            "field": "bid_price_with_warranty",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": true,
+            "field": "bid_price_without_warranty",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": true,
+            "field": "warranty_policy",
+            "description": ""
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "Wrecker",
+    "name": "PostPart_requestOffer_bid"
+  },
+  {
+    "group": "Wrecker",
+    "type": "post",
+    "url": "part_request/offer_list",
+    "title": "List of offers made for part request",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": false,
+            "field": "part_request_id",
+            "description": ""
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "Wrecker",
+    "name": "PostPart_requestOffer_list"
+  },
+  {
+    "group": "Wrecker",
+    "type": "post",
+    "url": "part_request/question_list",
+    "title": "Question list for part request",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>bearer token</p>"
+          }
+        ]
+      }
+    },
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": false,
+            "field": "part_request_id",
+            "description": ""
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "Wrecker",
+    "name": "PostPart_requestQuestion_list"
+  },
+  {
+    "group": "Wrecker",
+    "type": "post",
+    "url": "part_request/reply_question",
+    "title": "Question reply for part request",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>bearer token</p>"
+          }
+        ]
+      }
+    },
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": false,
+            "field": "question_id",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "reply",
+            "description": ""
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "Wrecker",
+    "name": "PostPart_requestReply_question"
+  },
+  {
+    "group": "Wrecker",
+    "type": "post",
+    "url": "part_request/setup_alert",
+    "title": "setup alert for Part Request",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>Bearer token</p>"
+          }
+        ]
+      }
+    },
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": false,
+            "field": "part_request_id",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": false,
+            "field": "notification",
+            "description": "<p>0/1</p>"
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "Wrecker",
+    "name": "PostPart_requestSetup_alert"
+  },
+  {
+    "group": "Wrecker",
+    "type": "post",
+    "url": "register",
+    "title": "Register",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>Bearer token</p>"
+          }
+        ]
+      }
+    },
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "email",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "password",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "abn",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "suburb",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "entity_name",
+            "description": ""
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "Wrecker",
+    "name": "PostRegister"
+  },
+  {
+    "group": "Wrecker",
+    "type": "post",
+    "url": "resend/email/verification",
+    "title": "Resend Email Verification",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>Bearer token</p>"
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "Wrecker",
+    "name": "PostResendEmailVerification"
+  },
+  {
+    "group": "Wrecker",
+    "type": "post",
+    "url": "update/shipping_method",
+    "title": "update shipping method",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>bearer token</p>"
+          }
+        ]
+      }
+    },
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "delivery_type",
+            "description": "<p>self_delivery/pick_up/third-party</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "delivery_charge",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "estimated_days",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": false,
+            "field": "part_request_bid_id",
+            "description": ""
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "Wrecker",
+    "name": "PostUpdateShipping_method"
+  },
+  {
+    "group": "Wrecker",
+    "type": "post",
+    "url": "update_location",
+    "title": "Update Location",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>bearer token</p>"
+          }
+        ]
+      }
+    },
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "address",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "latitude",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "longitude",
+            "description": ""
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "Wrecker",
+    "name": "PostUpdate_location"
+  },
+  {
+    "group": "Wrecker",
+    "type": "post",
+    "url": "update_profile",
+    "title": "Update Profile",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>Bearer token</p>"
+          }
+        ]
+      }
+    },
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "email",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "phone",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "name",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "profile_pic",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "suburb",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "about_me",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "Date",
+            "optional": true,
+            "field": "birth_date",
+            "description": "<p>Birth date yyyy-mm-dd format</p>"
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "Wrecker",
+    "name": "PostUpdate_profile"
+  },
+  {
+    "group": "Wrecker",
+    "type": "post",
+    "url": "update_token",
+    "title": "Update device token",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>bearer token</p>"
+          }
+        ]
+      }
+    },
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": false,
+            "field": "device_type",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "device_token",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "device_id",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "device_name",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "app_version",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "platform",
+            "description": ""
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "Wrecker",
+    "name": "PostUpdate_token"
+  },
+  {
+    "group": "Wrecker",
+    "type": "post",
+    "url": "wrecker/all_requests",
+    "title": "Get requests list",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>bearer token</p>"
+          }
+        ]
+      }
+    },
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": false,
+            "field": "offset",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "filter_type",
+            "description": "<p>all,wreck_car_request,part_request</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "search_string",
+            "description": "<p>search data for searching</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "suburb",
+            "description": "<p>filter param</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "distance_min",
+            "description": "<p>filter param</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "distance_max",
+            "description": "<p>filter param</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "price_min",
+            "description": "<p>filter param</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "price_max",
+            "description": "<p>filter param</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "task_type",
+            "description": "<p>mobile/in_store/any filter param</p>"
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "Wrecker",
+    "name": "PostWreckerAll_requests"
+  },
+  {
+    "group": "Wrecker",
+    "type": "post",
+    "url": "wrecker/delievery_charges_detail/third_party",
+    "title": "Store third party delivery detail",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>Bearer token</p>"
+          }
+        ]
+      }
+    },
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Double",
+            "optional": false,
+            "field": "third_party_delivery_charges_km",
+            "description": ""
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "Wrecker",
+    "name": "PostWreckerDelievery_charges_detailThird_party"
+  },
+  {
+    "group": "Wrecker",
+    "type": "post",
+    "url": "wrecker/part_request",
+    "title": "Wrecker Get Part Request List",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>bearer token</p>"
+          }
+        ]
+      }
+    },
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": false,
+            "field": "offset",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "search_string",
+            "description": "<p>search data for searching</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "suburb",
+            "description": "<p>filter param</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "distance_min",
+            "description": "<p>filter param</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "distance_max",
+            "description": "<p>filter param</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "price_min",
+            "description": "<p>filter param</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "price_max",
+            "description": "<p>filter param</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "status",
+            "description": "<p>filter param</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "task_type",
+            "description": "<p>mobile/in_store/any filter param</p>"
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "Wrecker",
+    "name": "PostWreckerPart_request"
+  },
+  {
+    "group": "Wrecker",
+    "type": "post",
+    "url": "wrecker/payment_info",
+    "title": "Wrecker Get Payment Info",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "filter_type",
+            "description": "<p>all,current_week,last_week,current_month,current_year,by_date,by_product</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Date",
+            "optional": true,
+            "field": "date",
+            "description": "<p>pass date in yyyy-mm-dd format if you choode by_date filter</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": true,
+            "field": "part_request_id",
+            "description": "<p>if you choose by_product filter</p>"
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "Wrecker",
+    "name": "PostWreckerPayment_info"
+  },
+  {
+    "group": "commission",
+    "type": "get",
+    "url": "commission",
+    "title": "Commission",
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "commission",
+    "name": "GetCommission"
+  },
+  {
+    "group": "gst",
+    "type": "get",
+    "url": "gst",
+    "title": "GST",
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "gst",
+    "name": "GetGst"
+  },
+  {
+    "group": "user",
+    "type": "post",
+    "url": "auth/login",
+    "title": "Login",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "email",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "password",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "user_type",
+            "description": "<p>customer</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "device_token",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "device_id",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "device_name",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "device_type",
+            "description": ""
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "user",
+    "name": "PostAuthLogin"
+  },
+  {
+    "group": "user",
+    "type": "post",
+    "url": "auth/verify",
+    "title": "OTP verify",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "phone",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "otp",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "user_type",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "device_token",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "device_id",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "device_name",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "device_type",
+            "description": ""
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "C:/wamp/www/wreckers_web/routes/api.php",
+    "groupTitle": "user",
+    "name": "PostAuthVerify"
+  }
+]

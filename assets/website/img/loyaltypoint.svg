@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1_1_" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve" width="512px" height="512px" class=""><g><g>
+	<path style="fill:#F0BC5E;" d="M14,1C6.832,1,1,6.832,1,14c0,4.363,2.175,8.413,5.818,10.833h14.363C24.825,22.413,27,18.363,27,14   C27,6.832,21.168,1,14,1z" data-original="#F0BC5E" class=""/>
+	<g>
+		<path style="fill:#F0BC5E;" d="M49,33c-7.168,0-13-5.832-13-13S41.832,7,49,7s13,5.832,13,13S56.168,33,49,33z" data-original="#F0BC5E" class=""/>
+	</g>
+	<g>
+		<path d="M49,25c-1.103,0-2-0.897-2-2h-2c0,1.858,1.28,3.411,3,3.858V29h2v-2.142c1.72-0.447,3-2,3-3.858c0-2.206-1.794-4-4-4    c-1.103,0-2-0.897-2-2s0.897-2,2-2s2,0.897,2,2h2c0-1.858-1.28-3.411-3-3.858V11h-2v2.142c-1.72,0.447-3,2-3,3.858    c0,2.206,1.794,4,4,4c1.103,0,2,0.897,2,2S50.103,25,49,25z" data-original="#000000" class="active-path" style="fill:#3F3A34" data-old_color="#000000"/>
+		<path d="M15,20.858c1.72-0.447,3-2,3-3.858c0-2.206-1.794-4-4-4c-1.103,0-2-0.897-2-2s0.897-2,2-2s2,0.897,2,2h2    c0-1.858-1.28-3.411-3-3.858V5h-2v2.142c-1.72,0.447-3,2-3,3.858c0,2.206,1.794,4,4,4c1.103,0,2,0.897,2,2s-0.897,2-2,2    s-2-0.897-2-2h-2c0,1.858,1.28,3.411,3,3.858V23H3v6H1v8h2v4H1v8h22v-6h2v-8h-2v-4h2v-8H15V20.858z M21,47h-2v-2h-2v2h-2v-2h-2v2    h-2v-2H9v2H7v-2H5v2H3v-4h18V47z M23,41h-2v-2h-2v2h-2v-2h-2v2h-2v-2h-2v2H9v-2H7v2H5v-4h18V41z M21,35h-2v-2h-2v2h-2v-2h-2v2h-2    v-2H9v2H7v-2H5v2H3v-4h18V35z M23,29h-2v-2h-2v2h-2v-2h-2v2h-2v-2h-2v2H9v-2H7v2H5v-4h18V29z" data-original="#000000" class="active-path" style="fill:#3F3A34" data-old_color="#000000"/>
+		<path d="M37,37h-2v8h2v4h-2v8h2v6h26v-8h-2v-4h2v-8h-2v-4h2v-8H37V37z M61,61h-2v-2h-2v2h-2v-2h-2v2h-2v-2h-2v2h-2v-2h-2v2h-2v-2    h-2v2h-2v-4h22V61z M59,55h-2v-2h-2v2h-2v-2h-2v2h-2v-2h-2v2h-2v-2h-2v2h-2v-2h-2v2h-2v-4h22V55z M61,49h-2v-2h-2v2h-2v-2h-2v2h-2    v-2h-2v2h-2v-2h-2v2h-2v-2h-2v2h-2v-4h22V49z M59,43h-2v-2h-2v2h-2v-2h-2v2h-2v-2h-2v2h-2v-2h-2v2h-2v-2h-2v2h-2v-4h22V43z M39,33    h22v4h-2v-2h-2v2h-2v-2h-2v2h-2v-2h-2v2h-2v-2h-2v2h-2v-2h-2v2h-2V33z" data-original="#000000" class="active-path" style="fill:#3F3A34" data-old_color="#000000"/>
+		<rect x="3" y="57" width="2" height="2" data-original="#000000" class="active-path" style="fill:#3F3A34" data-old_color="#000000"/>
+		<rect x="3" y="61" width="2" height="2" data-original="#000000" class="active-path" style="fill:#3F3A34" data-old_color="#000000"/>
+		<rect x="5" y="59" width="2" height="2" data-original="#000000" class="active-path" style="fill:#3F3A34" data-old_color="#000000"/>
+		<rect x="1" y="59" width="2" height="2" data-original="#000000" class="active-path" style="fill:#3F3A34" data-old_color="#000000"/>
+		<rect x="28" y="50" width="2" height="2" data-original="#000000" class="active-path" style="fill:#3F3A34" data-old_color="#000000"/>
+		<rect x="28" y="54" width="2" height="2" data-original="#000000" class="active-path" style="fill:#3F3A34" data-old_color="#000000"/>
+		<rect x="30" y="52" width="2" height="2" data-original="#000000" class="active-path" style="fill:#3F3A34" data-old_color="#000000"/>
+		<rect x="26" y="52" width="2" height="2" data-original="#000000" class="active-path" style="fill:#3F3A34" data-old_color="#000000"/>
+		<rect x="33" y="5" width="2" height="2" data-original="#000000" class="active-path" style="fill:#3F3A34" data-old_color="#000000"/>
+		<rect x="33" y="9" width="2" height="2" data-original="#000000" class="active-path" style="fill:#3F3A34" data-old_color="#000000"/>
+		<rect x="35" y="7" width="2" height="2" data-original="#000000" class="active-path" style="fill:#3F3A34" data-old_color="#000000"/>
+		<rect x="31" y="7" width="2" height="2" data-original="#000000" class="active-path" style="fill:#3F3A34" data-old_color="#000000"/>
+		<rect x="59" y="2" width="2" height="2" data-original="#000000" class="active-path" style="fill:#3F3A34" data-old_color="#000000"/>
+		<rect x="59" y="6" width="2" height="2" data-original="#000000" class="active-path" style="fill:#3F3A34" data-old_color="#000000"/>
+		<rect x="61" y="4" width="2" height="2" data-original="#000000" class="active-path" style="fill:#3F3A34" data-old_color="#000000"/>
+		<rect x="57" y="4" width="2" height="2" data-original="#000000" class="active-path" style="fill:#3F3A34" data-old_color="#000000"/>
+	</g>
+</g></g> </svg>

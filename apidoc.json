@@ -1,0 +1,15 @@
+{
+  "name": "Predrinkdelivery Driver API Document",
+  "title" : "Predrinkdelivery Driver API Document",
+  "version": "1.0.0",
+  "description": "",
+  "sampleUrl": false,
+  "defaultVersion": "1.0.0",
+  "apidoc": "0.3.0",
+  "generator": {
+    "name": "API List Document",
+    "time": "2019-02-19T09:40:18.149Z",
+    "url": "http://35.177.141.159/ws/v1/apid/",
+    "version": "0.17.7"
+  }
+}
